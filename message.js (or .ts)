@@ -1,0 +1,8 @@
+app.post('/api/bot/message', async (req, res) => {
+  try {
+    // ...existing code...
+  } catch (error) {
+    console.error('Error in /api/bot/message:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
