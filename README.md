@@ -34,9 +34,9 @@ A complete flight booking chatbot built with Next.js, React, and TypeScript. Thi
    - Open terminal/command prompt in the project directory
 
 2. **Install Dependencies**
-   \`\`\`bash
+
    npm install
-   \`\`\`
+
 
 3. **Start Development Server**
    \`\`\`bash
