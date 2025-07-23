@@ -1209,14 +1209,34 @@ export default function FlightBookingBot() {
               <div>
                 <Label>Price Range</Label>
                 <div className="flex items-center justify-between mt-2">
+                  <input
+                    type="range"
+                    min={0}
+                    max={10000}
+                    value={filterOptions.priceRange[0]}
+                    onChange={(e) =>
+                      setFilterOptions((prev) => ({
+                        ...prev,
+                        priceRange: [Number(e.target.value), prev.priceRange[1]],
+                      }))
+                    }
+                    className="w-full"
+                  />
                   <span>₹{filterOptions.priceRange[0]}</span>
+                  <input
+                    type="range"
+                    min={0}
+                    max={10000}
+                    value={filterOptions.priceRange[1]}
+                    onChange={(e) =>
+                      setFilterOptions((prev) => ({
+                        ...prev,
+                        priceRange: [prev.priceRange[0], Number(e.target.value)],
+                      }))
+                    }
+                    className="w-full"
+                  />
                   <span>₹{filterOptions.priceRange[1]}</span>
-                </div>
-                <div className="py-4">
-                  {/* Price slider would go here */}
-                  <div className="h-2 bg-gray-200 rounded-full">
-                    <div className="h-2 bg-blue-600 rounded-full" style={{ width: "60%" }}></div>
-                  </div>
                 </div>
               </div>
             </TabsContent>
