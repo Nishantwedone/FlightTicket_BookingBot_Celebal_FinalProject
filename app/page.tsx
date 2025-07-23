@@ -1,5 +1,7 @@
 "use client"
 
+// import Link from "next/link"
+
 import { useState, useRef, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -790,6 +792,12 @@ export default function FlightBookingBot() {
               <Filter className="w-4 h-4" />
               <span>Filters</span>
             </Button>
+
+            {/* <Link href="/admin" passHref>
+      <a className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 inline-block">
+        View Admin Dashboard
+      </a>
+    </Link> */}
 
             <div className="flex border rounded-md overflow-hidden">
               <Button

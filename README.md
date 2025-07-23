@@ -90,7 +90,17 @@ flight-booking-bot/
 ├── components/ui/                  # UI components
 ├── lib/                           # Utility functions
 ├── package.json                   # Dependencies
-├── tailwind.config.js            # Tailwind configuration
+├── tailwind.config.js            # Tailwind configurationimport React from "react";
+
+export default function AdminDashboard() {
+  return (
+    <div className="p-8">
+      <h1 className="text-2xl font-bold mb-4">Admin Dashboard</h1>
+      <p>Welcome to the admin dashboard. Here you can manage flights, bookings, and more.</p>
+      {/* Add your admin features/components here */}
+    </div>
+  );
+}
 └── tsconfig.json                 # TypeScript configuration
 \`\`\`
 

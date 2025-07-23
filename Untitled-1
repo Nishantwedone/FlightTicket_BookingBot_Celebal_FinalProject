@@ -1,0 +1,21 @@
+import Link from "next/link";
+
+// ...existing imports...
+
+export default function HomePage() {
+  return (
+    <main>
+      {/* ...existing chat UI... */}
+      <div className="mt-6 flex justify-end">
+        <Link href="/admin">
+          <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+            View Admin Dashboard
+          </button>
+        </Link>
+      </div>
+      {/* ...existing code... */}
+    </main>
+  );
+}
+
+// ...existing code...
